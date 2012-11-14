@@ -46,6 +46,15 @@ public class GameSpoutCommandExecutor implements CommandExecutor {
 
 		} 
 		
+		else if (args[0].equalsIgnoreCase("description")) {
+			Player player = (Player) sender;
+			player.sendMessage("Commands available: ");
+			player.sendMessage("/game camoflauge: blend into your surroundings!");
+			player.sendMessage("/game dispel: cancels camoflauge");
+			
+			return true;
+		}
+		
 		else if (args[0].equalsIgnoreCase("camoflauge")) {
 			Player player = (Player) sender;
 			SpoutCraftPlayer sp = (SpoutCraftPlayer) player;
