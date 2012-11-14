@@ -1,0 +1,19 @@
+# This is a sample plugin.yml
+# For more infomration refer to http://wiki.bukkit.org/Plugin_YAML
+main: edu.unca.szhang.GameSpout.GameSpout
+name: ${project.name}
+version: ${project.version}
+author: ShuoZhang
+description: ${project.description}
+commands:
+  game:
+    description: Recreation of stuff from games
+    usage: use [ /<game> description ] for all available commands
+    permission: game.*
+permissions:
+  game.*:
+    description: gives all permissions of the Plugin
+    default: true
+    children:
+      culd.description:
+        description: explains all available commands    
