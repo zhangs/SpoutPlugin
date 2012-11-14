@@ -63,7 +63,6 @@ public class GameSpoutCommandExecutor implements CommandExecutor {
 			World world = loc.getWorld();
 			loc.setY(loc.getY() - 1);
 			org.bukkit.Material ground = world.getBlockAt(loc).getType();
-			player.sendMessage("Ground is " + ground);		
 			
 			if (ground == org.bukkit.Material.GRASS) {
 				sp.setSkin("http://i46.tinypic.com/rlhr4n.png");

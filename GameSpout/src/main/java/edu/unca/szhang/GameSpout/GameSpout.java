@@ -28,7 +28,7 @@ public class GameSpout extends JavaPlugin {
 	 */
 	@Override
 	public void onEnable() {
-        musicplayed = new HashMap<Player, Boolean>();		
+		musicplayed = new HashMap<Player, Boolean>();		
 
 		getLogger().log(Level.INFO, "[Spout Item Test Plugin] Enabled!");
 
